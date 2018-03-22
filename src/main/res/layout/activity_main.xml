@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="edu.gmail.yerra.keshav.Spectre.MainActivity">
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:fontFamily="sans-serif-thin"
+        android:text="Number Spectre"
+        android:textColor="@android:color/white"
+        android:textSize="34dp"
+        android:paddingTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/easy_difficulty_button"
+        android:layout_alignStart="@+id/easy_difficulty_button" />
+
+    <Button
+        android:id="@+id/easy_difficulty_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:text="@string/easy__diff_button_text"
+        android:stateListAnimator="@anim/button_elevation"
+        android:background="#0C0A3C"
+        android:onClick="easyDiffButtonClicked"
+        android:layout_above="@+id/medium_difficulty_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" />
+
+
+    <Button
+        android:id="@+id/medium_difficulty_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:text="@string/medium_diff_button_text"
+        android:stateListAnimator="@anim/button_elevation"
+        android:background="#0C0A3C"
+        android:onClick="mediumDiffButtonClicked"
+        android:layout_above="@+id/about_button"
+        android:layout_alignLeft="@+id/hard_difficulty_button"
+        android:layout_alignStart="@+id/hard_difficulty_button"
+        android:layout_marginBottom="134dp" />
+
+    <Button
+        android:id="@+id/hard_difficulty_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:text="@string/hard_diff_button_text"
+        android:stateListAnimator="@anim/button_elevation"
+        android:background="#0C0A3C"
+        android:onClick="hardDiffButtonClicked"
+        android:layout_marginBottom="36dp"
+        android:layout_above="@+id/about_button"
+        android:layout_alignLeft="@+id/about_button"
+        android:layout_alignStart="@+id/about_button" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:text="@string/about_button_text"
+        android:stateListAnimator="@anim/button_elevation"
+        android:background="#3C0A1C"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="372dp"
+        android:layout_marginStart="372dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignBottom="@+id/app_title"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/s"
+        android:layout_above="@+id/easy_difficulty_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="orfo"
+        android:id="@+id/textView"
+        android:layout_below="@+id/app_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" /><![CDATA[
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_alignRight="@+id/easy_difficulty_button"
+        android:layout_alignEnd="@+id/easy_difficulty_button"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_below="@+id/app_title" />
+]]>
+</RelativeLayout>
